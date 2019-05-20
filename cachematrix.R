@@ -46,6 +46,8 @@ cacheSolve <- function(x, ...) {
   matrix <- x$get()
   cache <- solve(matrix, ...)
 
+  x$setMatrix(cache)
+  
   # show the matrix
   return (cache)
 }
